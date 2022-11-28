@@ -27,15 +27,26 @@ h1{
 .row{
     width: 70%;
     margin: 0 auto;
+}
+
+.row-2{
+    width: 70%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+}
+
+.col{
+    width: 27%;
 }
 
 form{
-    width: 27%;
     padding: 20px 0;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
 }
 
 label{
@@ -53,4 +64,54 @@ input, select{
     height: 30px;
     border: 1px solid rgba(185,20,80,255);
     border-radius: 5px;
+}
+
+.btn{
+    width: 10%;
+    height: 40px;
+    color:rgba(185,20,80,255);
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+.btn:hover{
+    border: 2px solid orange;
+    border-radius: 5px;
+}
+
+/* secondo container */
+
+.row-biglietto{
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.col-30{
+    width: 30%;
+    background-color: grey;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.col-70{
+    width: 70%;
+    border: 1px solid black;
+}
+
+.container h2{
+    padding: 20px 0 5px 50px;
+}
+
+table{
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th{
+    padding-bottom: 50px;
 }

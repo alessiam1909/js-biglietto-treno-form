@@ -11,24 +11,60 @@
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="container">
             <div class="row">
-                <form action="">
-                    <label for="name-surname">Nome e Cognome</label>
-                    <input id="nome-cognome" type="text" placeholder="Inserisci nome e cognome">
-                </form>
-                <form action="">
-                    <label for="km-da-percorrere">Km da percorrere</label>
-                    <input id="km-totali" type="text" placeholder="Inserisci i km che devi percorrere">
-                </form>
-                <form action="">
-                    <label for="età">Fascia d'età</label>
-                    <select name="scelta-età" id="fascia-età">
-                        <option value="Minorenne">Minorenne</option>
-                        <option value="Maggiorenne">Maggiorenne</option>
-                        <option value="Over65">Over 65</option>
-                    </select>
+                <form action="" id="form">
+                    <div class="col">
+                        <label for="name-surname">Nome e Cognome</label>
+                        <input id="nome-cognome" type="text" placeholder="Inserisci nome e cognome">
+                    </div>
+                    <div class="col">
+                        <label for="km-da-percorrere">Km da percorrere</label>
+                        <input id="km-totali" type="text" placeholder="Inserisci i km che devi percorrere">
+                    </div>
+                    <div class="col">    
+                        <label for="età">Fascia d'età</label>
+                        <select name="scelta-età" id="fascia-età">
+                            <option value="Minorenne">Minorenne</option>
+                            <option value="Maggiorenne">Maggiorenne</option>
+                            <option value="Over65">Over 65</option>
+                        </select>
+                    </div>
                 </form>
             </div>
-            <div class="row"></div>
+            <div class="row-2">
+                <button id="genera" class="btn">
+                   <strong>Genera</strong></button>
+                <button id="annulla" class="btn"><strong>Annulla</strong></button>
+            </div>
+        </div>
+        <!-- creo il secondo contenitore  -->
+        <h1>IL TUO BIGLIETTO</h1>
+        <div class="container">
+            <h2>DETTAGLIO PASSEGGERI:</h2>
+            <div class="row-biglietto">
+                <div class="col-30">
+                    <div>
+                        <h3>NOME PASSEGGERO</h3>
+                        <H4 id="nome-passeggero"></H4>
+                    </div>
+                </div>
+                <div class="col-70">
+                    <table>
+                        <tr>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+                        <tr>
+                            <td>Biglietto Standard</td>
+                            <td>5</td>
+                            <td>92911</td>
+                            <td id="costo-biglietto"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
         </div>
         <script type="text/javascript" src="./Js/script.js"></script>
     </body>
